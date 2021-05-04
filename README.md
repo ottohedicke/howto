@@ -2,157 +2,120 @@
 
 *Read this document in other languages: [deutsch](https://github.com/Uncrout/TestFuerOttoDL_Leitfaden/blob/main/README.md), [english](https://github.com/Uncrout/TestFuerOttoDL_Leitfaden/blob/main/EN/README_EN.md)*
 
-# Leitfaden für eine Dienstleister-Anbindung
+# Service Provider Integration guide
 
-Präambel
+**Präambel
 - Was kann in diesem Repo gefunden werden?
-- Hinweis auf Testfälle und Postman Collection
+- Hinweis auf Testfälle und Postman Collection**
 
-### Kontakt
+### Contact
 Partner Connector Management: partnerintegration@otto.market
 
-## Inhaltsverzeichnis
-### 1. Wissenswertes vorab
-* Einführung
-* Prozesschart
-* Kontaktpersonen
-* Systemlandschaften
-### 2. Anbindung
+## Table of content
+### 1. Things to know
+* Introduction
+* Process
+* Contact
+* Environments
+### 2. Integration
 * Must-Haves
-* Testphase
-* Pilothase
-* ~~Projektabschluss~~
-### 3. Betrieb
+* Test phase
+* Pilot phase
+* ~~Project conclusion~~
+### 3. Operation
 * Marketing und Sales
 * ~~Development~~
 
-# 1. Wissenswertes vorab
-## Einführung
+# 1. Things to know
+## Introduction
 
-Nachdem Sie das Partner Connector Management (PCM) kennengelernt haben, 
-können wir nun gemeinsam mit der technischen Anbindung beginnen. In diesem 
-Dokument finden Sie sämtliche Informationen zum Prozess der Anbindung. Das 
-PCM unterstützt Sie bei der Entwicklung einer stabilen und skalierfähigen Schnittstelle,
-damit bereits der erste Partner auf eine verlässliche Dienstleistung zählen kann.
-Gemeinsam schaffen wir die Basis für eine nachhaltige Potenzialausschöpfung auf beiden Seiten.
+Afteryouhave learned  more  about  the Partner  Connector  Management  (PCM), we  can start withthe technical  connection. In this document  you will  find all  the information about the integrationprocess. The PCM is the partner at your side and supports you in developing a stable and scalable interface so that the first partner can  already  count  on  a  reliable  service.  In  this  way,  we  create  the  basis  for  a sustainable exploitation of potential on both sides. 
 
-Dieses Dokument ist die zentrale Informationsquelle für Ihre Anbindung an den OTTO Market.
-Um letztlich eine valide Schnittstelle zu erstellen, ist es essentiell dieses Dokument 
-zu lesen und die Informationen stets als Hilfsmittel zu Rate zu ziehen.
+This document is the central source of information for your integrationto OTTO. In order to ultimately create a valid interface, it is essential to read this document and to always consult the information as an aid. 
 
-Neben einem Überblick über den gesamten Anbindungsprozess und Informationen 
-über Ansprechpersonen sowie der Systemlandschaft, beinhaltet das Dokument 
-detaillierte Informationen zu den einzelnen Prozessschritten.
-Schließlich finden Sie Informationen zu Marketing und den Developmentprozess.
+In addition to an overview of the entire integrationprocess and information about contact  persons  and  the  system  landscape,  the  document  contains  detailed information about the individual process steps. Finally, you will find information on marketing and the development process.  
 
-Bevor Sie nun mit dem Durcharbeiten beginnen finden Sie hier noch Erläuterungen 
-zum OTTO Sprachgebrauch:
+Before  you  start  working  through  the  document,  you  will  find  explanations  of OTTO language usage here:
 
-**Partner**: Händler, die auf otto.de verkaufen.
+**Partner**: Merchants selling on otto.de
 
 **PCM**: Partner Connector Management
 
-Wir freuen uns auf eine partnerschaftliche Zusammenarbeit und stehen für Rückfragen gerne zur Verfügung.
-Sollten Sie Anregungen oder Feedback zu haben kommen Sie gerne auf uns zu. 
+We  look  forward  to  working  with  you  as  partners  and  are  happy  to  answer  any questions  you  may  have.  If  you  have  any  suggestions  or  feedback,  please do  not hesitate to contact us. 
 
-## Prozesschart
+## Process
 
-![Prozesschart Anbindung OTTO.market](https://github.com/Uncrout/TestFuerOttoDL_Leitfaden/blob/main/img/Prozesschart.PNG)
+![Prozesschart Anbindung OTTO.market](https://github.com/Uncrout/TestFuerOttoDL_Leitfaden/blob/main/img/Prozesschart_eng.PNG)
 
-Dieses Prozesschart gibt Ihnen einen allgemeinen Überblick über den obligatorischen Prozess der Anbindung.
-Der definierte Prozess stellt eine reibungslose Anbindung sicher, daher sollte sich genau an diesen gehalten werden.
+This process chart gives you a general overview of the mandatory process of the integration. The shown process ensures a smooth connection, so it should be followed exactly.
 
-Zum Start des Projektes geht es darum, dass Verhalten der Schnittstellen 
-kennenzulernen und mit der Entwicklung zu starten. Dafür erhalten Sie von uns im 
-Rahmen des Kickoff-Pakets Testfälle, die Sie in den von uns zur Verfügung
-gestellten Testumgebungen bearbeiten. Die Zugänge zu den Testumgebungen 
-haben Sie von uns mit diesem Dokument zusammen erhalten. Während der 
-Entwicklung haben sie Zeit ihre Software eigenständig zu entwickeln und diese 
-intern zu testen. Nach Abschluss der internen Tests müssen Sie die Testfälle einmal 
-durchspielen und Ihre Ergebnisse an uns übermitteln.
+At the start of the project, it is important to get to know the behavior of the interfaces and to start with the development. For this purpose, you will receive test cases from us as part of the kickoff package, which you will process in the test environments provided by us. You have received the access to the test environments from us together with this document. During the development you have time to develop your software independently and to test it internally. After completion of the internal tests you have to run through the test cases once and submit your results to us. 
 
-Bei erfolgreicher Abnahme dieser suchen wir in der Pilotphase gemeinsam nach 
-einem geeigneten Pilotpartner und Sie beginnen mit der Einrichtung und 
-Datensendungen des Pilotpartners. Sobald dieser live ist und unsere Abnahme 
-erfolgreich war, folgt der Projektabschluss und der Übergang in den Betrieb. 
+If these are successfully accepted, we will work together in the pilot phase to find a suitable pilot partner and you can start setting up and sending data for the pilot partner to the OTTO Market. After a period of being live, the PCM will have a deeper look into the data of the pilot partner and give feedback. After the last points are discussed and the partner is running smoothly, the project can be completed successfully. 
 
-## Kontaktpersonen
+## Contact
 
-Während und nach der Anbindung steht Ihnen das Partner Connector Management (PCM) zur Verfügung.
-Das PCM ist die zentrale Anlaufstelle für alle Dienstleister, die sich an OTTO anbinden möchten.
+During and after the integration, the Partner Connector Management (PCM) is available to you. The PCM is the central point of contact for all service providers who want to connect to OTTO. 
 
 ```
-Sie erreichen das Partner Connector Management stets unter: partnerintegration@otto.market
+You can always reach out to our Partner Connector Management at:  partnerintegration@otto.market
 ```
 
-Bitte verweisen Sie potenzielle Partner an die offizielle Webseite: [OTTO.market](https://www.otto.market/)
+Please refer potential partners to the official website [OTTO.market](https://www.otto.market/).
   
-## Systemlandschaft
+## Environments
 
-Im Laufe des Anbindungsprozesses werden Sie zunächst in der Testumgebung
-arbeiten, bevor sie im Betrieb in die Liveumgebung wechseln. Die Zugänge zu den 
-Umgebungen, welche sich hinsichtlich ihres Leistungsumfangs unterscheiden, 
-erhalten Sie über das PCM.
+During the integration process, you will first work in the test environment before switching to the live environment during operation. You can access the environments, which differ in terms of their scope of services, via the PCM. 
 
 ```
-Bitte beachten Sie, dass die Zugangsdaten der Umgebungen unterschiedlich sind.
-Daten der Nonlive- funktionieren nicht in der Live-Umgebung.
+Please note that the credentials are different for all environments.
+Nonlive data does not work in the live environment.
 ```
 
-Bitte fügen Sie für alle Datensendungen zu OTTO im Request-Header der API Requests den folgenden Key und das folgende Value ein: 
+Please include the following key and value in the request header of the API requests for all data transmissions to OTTO:
 
 ```
 Key: user-agent
-Value: <Ihre Dienstleisterkennung>
+Value: <your company name>
 ```
 
-Dies hilft uns, Ihre Datensendungen zu bündeln und Sie bei auftretenden Problemen besser unterstützen zu können.
+This will help us bundle your data submissions and assist you with any potential issues.
 
-Um Missverständnissen vorzubeugen, möchten wir Sie bitten sich mit den einzelnen 
-Umgebungen vertraut zu machen. Für detailliertere Informationen, nutzen Sie bitte die weiterführenden Links zu unseren API-Dokumentationen.
+To avoid misunderstandings, we would like to ask you to familiarize yourself with the individual environments. For more details please use the following links.
 
-**Die Sandbox**
+**Sandbox**
 
-Für die technische Integration stellen wir Ihnen eine Sandbox zur Verfügung. Mit dieser können die Endpoints der OTTO Market API getestet werden. Ein UI gibt es für die Sandbox nicht. Außerdem haben Sie in der Sandbox Zugang zu einem Ordergenerator um Testaufträge zu erzeugen. Weiterführende Informationen zur Sandbox finden sie in unserer [API Dokumentation](https://public-docs.nonlive.api.otto.market/02_Sandbox/index.html).
+For your technical integration we are providing a Sandbox for test purposes. There you can test the OTTO Market API Endpoints and generate test orders. All further information you can find here: [API Dokumentation](https://public-docs.nonlive.api.otto.market/02_Sandbox/index.html).
 
-Die Sandbox befindet sich im Aufbau und wird vom Leistungsumfang stetig weiterentwickelt.
-Aufgrund der Tatsache, dass in der Sandbox aktuell noch nicht alle Endpoints der Live-Umgebung getestet werden können,
-steht Ihnen zusätzlich unsere Nonlive-Umgebung für Testzwecke zur Verfügung.
+At the moment the sandbox does not have all interfaces ready which are available in the live environment. Due to the lack of the interfaces products and quantites in the sandbox, we are offering you an API-User for our Nonlive environment as well.
 
-**Die Nonlive Umgebung**
+**Nonlive**
 
-Die Schnittstellen: Products und Quantities können in der Nonlive-Umgebung getestet werden.
-Analog zur Sandbox steht auch in dieser Umgebung ausschließlich die API zur Verfügung.
-Sandbox und Nonlive bilden gemeinsam unsere Testumgebung ab.
+The Products and Quantities interfaces can be tested in the Nonlive environment. The PCM will send you the user separately.
 
-**Die Live Umgebung**
+**Live**
 
-Die Live Umgebung wird zum ersten Mal in der Pilotphase genutzt. Sie als 
-Dienstleister bekommen keinen eigenen Zugriff und müssen auf die Zugänge eines 
-ersten aktiven Partners zurückgreifen. Mit diesem sogenannten Pilotpartner testen Sie erstmalig in der Liveumgebung.
-Den Zugang bekommen die Partner innerhalb ihres Onboardings.
+The live environment will be used for the first time during the pilot phase.
+You as a service provider do not get your own access and have to fall back on the accesses of a first active partner. With this so-called pilot partner, you test in the live environment for the first time. The partners get the access within their onboarding.
 
 ```
-Die Ihnen zur Verfügung gestellten Zugangsdaten funktionieren NUR in der jeweiligen Umgebung.
-Z.B. funktionieren die Userdaten der Sandbox nicht in der Nonlive- oder Live-Umgebung und vice versa.
+The log in data for the sandbox does not work in the live environment.
+
+The user for the Sandbox- and the nonlive-environment are only for the OTTO Market API.
+You will not receive a user for the partner portal.
 ```
 
-# Anbindung
+# Integration
 
-In diesem Abschnitt finden Sie einen detaillieren Überblick über die Prozessschritte der Anbindung.
-Zunächst zeigen wir Ihnen im Kapitel **Must-Haves** einen Überblick über die Kategorisierung der Endpoints bezogen auf ihre 
-Notwendigkeit. Im Anschluss wird genauer auf die Test- und Pilotphase eingegangen.
-Im Kapital Projektabschluss wird der Übergang in den Betrieb erläutert.
+In this section, you will find a detailed overview of the integration steps. First, in the must-haves chapter, we show you an insight into the categorization of endpoints in terms of their necessity. This is followed by a more detailed look at the test and pilot phase. In the Project Completion chapter, we will show you the shift to operation.
 
 ## Must-Haves
 
-Nachfolgend finden Sie eine Übersicht mit all unseren **Endpoints** und einer 
-Kategorisierung in "Must´s", "Should´s" und "Could´s". Darüber hinaus finden Sie 
-weitere wichtige Besonderheiten zu einzelnen Endpoints. Bitte beachten Sie, dass die Kategorisierung differenziert entsprechend Ihres Leistungsumfangs betrachtet werden muss. Wenn Sie z.B. nur den Auftragsabwicklungsprozess mit Ihrem Service abdecken wollen, so gelten auch nur die Must´s aus *Oders*, *Shipments* und *Returns*. Gerne stehen wir beratend sowie für weitere Fragen zu den einzelnzen Must´s, Should´s und Could´s zur Verfügung.
+Below you will find an overview with all our endpoints and a categorization by musts, shoulds and coulds. In addition, you will find further important special features for individual endpoints. Please note that the categorization is of course only valid for your respective scope of services. If, for example, you only want to cover the order processing process in your service, then only the musts from Orders, Shipments and Returns apply. We will be happy to advise you and answer any further questions you may have about individual musts, shoulds and coulds.
 
-**Must´s**: Endpoints, die verpflichtend zur Nutzung der jeweiligen Schnittstelle gepflegt werden müssen 
-**Should´s**: Endpoints, die empfehlenswert, aber nicht verpflichtend sind
-**Could´s**: Optionale Endpoints
+**Must´s**: Endpoints that are mandatory order to use the respective interface  
+**Should´s**: Endpoints that are recommended but not mandatory 
+**Could´s**: Optional endpoints
 
 ### Products
 |**Version**|**Interface**|**Endpoint**|**Request**|**Must / Should / Could**|
@@ -169,19 +132,21 @@ weitere wichtige Besonderheiten zu einzelnen Endpoints. Bitte beachten Sie, dass
 |||/active-status|POST|Must|
 
 ```
-Um stets die aktuellen Marken und Kategorien zu haben, ist es wichtig mehrmals die Woche die Listen 
-/v1/ products/ brands (GET) und /v1/ products/ categories (GET) herunter zu laden.
+In order to always have the latest brands and categories it is important to download the lists
+/v1/ products/ brands (GET) and /v1/ products/ categories (GET)
+several times a week.
 ```
 
 ```
-Um verschiedene Varianten zu bilden ist es wichtig, dass über /v1/products/ (POST) alle
-zusammenhängenden SKUs mit dem gleichen productName geschickt werden.
-Dieser steuert die Zusammenführung der SKUs zu einem Produkt.
+To form different variants, it is important that via
+/v1/ products/ (POST)
+all related SKUs are sent with the same productName.
+This controls the merging of the SKUs into one product.
 ```
 
 ```
-Bitte beachten Sie, dass die Verarbeitung der Produktdaten (POST/v1/products) asynchron abläuft
-und Sie in der Response weiterführende Links (self, succeeded, failed) zum Abrufen der Fehler erhalten. 
+Please note that the processing of the product data (POST /v1/products) is asynchronous 
+and you will receive further links (self, succeeded, failed, unchanged) in the response to retrieve the errors. 
 ```
 
 ### Quantities
@@ -207,9 +172,8 @@ und Sie in der Response weiterführende Links (self, succeeded, failed) zum Abru
 |||/carries/{carrier}/trackingnumbers/{trackingnumber}/positionitems|GET|Should|
 
 ```
-Bei /v1/shipments/ (POST) muss immer ein Retourentrackingkey übermittelt werden,
-wenn es sich um einen Paketversand handelt. Bei Speditionsversand ist dieser optional.
-Die Validierung basiert auf dem deliveryType bei der Produktanlage.
+For /v1/shipments/ (POST) a return tracking key must always be transmitted if it is a parcel shipment.
+This is optional for forwarding shipments. The validation is based on the deliveryType when creating the product.
 ```
 
 ### Returns
@@ -226,63 +190,39 @@ Die Validierung basiert auf dem deliveryType bei der Produktanlage.
 |||/{receiptNumber}|GET|Could|
 |||/{receiptNumber}.pdf|GET|Could|
 
-## Testphase
+## Test phase
 
-Sobald Sie mit der Implementierung der Schnittstellen fertig sind, müssen 
-anschließend die von uns definierten **Testfälle** abgeschlossen werden.
+As soon as you have finished implementing the interfaces, you can start testing the best practice test cases.
 
-Dies dient dazu zum einen erste Einblicke Ihre Systeme zu erhalten und zum 
-anderen die Bilder aus Ihrem System abzuspeichern, um unseren Partnern 
-zukünftig besseren Support anbieten zu können.
+We want to give you a better understanding which are important processes on our side and with the results of the test cases, we want to get first insights into your systems. With the screenshots we can enable our support to help our partners in a better way. 
 
-Diese finden Sie in dem zugehörigen Dokument, welches Sie von uns mit dieser 
-Handreichung erhalten haben. Sobald alle Testfälle von uns abgenommen wurden, 
-können Sie mit der Pilotphase weiter machen.
+The test cases can be found in the corresponding document, which you received from us with this guide. As soon as all test cases have been accepted by us, you can continue with the pilot phase.  
 
-## Pilotphase
+## Pilot phase
 
-Nach dem erfolgreichen Abschluss der Testphase wird mit einem Pilotpartner 
-erstmals in der Live-Umgebung agiert. Sollte kein Pilotpartner verfügbar sein, 
-kommen Sie bitte auf das PCM zu, welches Sie bei der Suche unterstützen wird.
+After successful completion of the test phase, a pilot partner will be selected and will operate in the live environment for the first time. If no pilot partner is available, please contact the PCM, which will support you in your search.
 
-Nach dem ein Pilotpartner feststeht muss dieser beim PCM angegeben werden. In 
-der Pilotphase kümmert sich das PCM ausschließlich um die Belange des 
-Dienstleisters. Die Betreuung des Partners liegt nicht in der Kompetenz des PCM.
+Once a pilot partner has been determined, it must be specified at the PCM. The role of the PCM in the pilot phase is to support you as a service provider and an approval of a scalable and stable interface. The support of the partner in the regular process will be provided by our partner support and the partner helpdesk. 
 
-Alle Partner, die mit dem Einspielen von Produkten beginnen, haben zunächst eine 
-sogenannte Display Restriction. Konkret bedeutet dies, dass die Produkte nicht 
-unmittelbar im Shop öffentlich sichtbar sind. Erst nach der Aufhebung der Display 
-Restriction können Kund\*innen die Produkte einsehen. Bevor OTTO die Produkte 
-auf otto.de auch für Endkund\*innen sichtbar macht, müssen folgende 
-Prozessschritte durchlaufen sein, über die sich der Partner im Partner Helpdesk 
-informieren kann: 
+All partners who start importing products initially have a display restriction. This means that products are not directly visible to the end customer on otto.de. Only after the display restriction has been removed, customers can find the products. This enables the partner to test and adjust products and processes under live conditions. Before OTTO makes the products visible to end customers on otto.de, the partner must independently confirm the removal of the display restriction. A partner can do this independently in the Partner Portal. On the start page and the interface and the product creation interface, a yellow banner is provided for this purpose. There the partner must agree to the following: 
 
-1. Das Vorgehen für eine Testbestellung
-2. Bestätigung über das Verständnis des Bestellprozesses (Shipment 
-Request) per Ticket an OTTO senden
+1. The procedure for a test order
+2. 2.	The understanding of the order process (Shipment Request)
 
-Dieser Mechanismus ermöglicht also das Testen unter realen Bedingungen. Wenn 
-die Produktdaten in Ordnung sind und die Voraussetzungen erfüllt sind, kann der 
-Partner final live gehen. Seitens des PCM wird zwei Wochen nach dem Livegang 
-geprüft, ob es Auffälligkeiten oder Probleme entlang der Schnittstelle gibt.
+PCM checks two weeks after going live to see if there are any anomalies or problems along the interface.
 
-In der Pilotintegration wird auf folgende Kriterien besonders geachtet:
+During the pilot integration, particular attention is paid to the following criteria:
 
-* Ist die Variantenbildung der Produkte korrekt?
-* Import-Fehlermeldungen – sind diese ersichtlich und verstanden?
-* Können sich die Aufträge korrekt gezogen werden?
-* Funktionieren die Versandmeldungen – Ist auch der returnTrackingkey korrekt enthalten?
-* Gibt es Auffällige HTTP-Fehler in den API-Requests? Fehlerquote pro Schnittstelle
-* Ist der User-Agent eingepflegt?
+*	Is the variant formation of the products correct? 
+*	Error messages - are they apparent and understood?
+*	Can the orders be fetched correctly? 
+*	Do the shipping requests work - Is the returnTrackingkey also included correctly?
+*	Are there any noticeable http errors in the API requests? Error rate per interface
+*	Is the user agent also being send by every Request?
 
-In jedem Fall erfolgen dann ein Abschluss und die Abnahme der Pilotintegration. 
-Sollten keine Anpassungen mehr nötig sein können Sie nun mit dem Aufschalten 
-weiterer Partner beginnen.
+After the PCM checked all these points and give the go, you can now start to connect additional partners.
 
-# Betrieb
+# Operations
 ## Marketing und Sales
 
-Nach Abschluss der Anbindung und Abnahme der Pilotphase haben Sie die 
-Möglichkeit, ihren Service über unsere Homepage zu vermarkten. Wir benötigen 
-hierfür lediglich ein Logo und eine Landing Page von Ihnen. Für etwaige
-Marketingaktionen Ihrerseits bitten wir um eine stetige Abstimmung mit uns.
+After completion of the integration and the pilot phase is done, you have the opportunity show you as a service provider on our homepage otto.market. All we need from you is a logo and a landing page. For any marketing actions on your part, we ask for constant coordination with us.
