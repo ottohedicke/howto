@@ -1,4 +1,4 @@
-![OTTO.market Logo](https://github.com/Uncrout/TestFuerOttoDL_Leitfaden/blob/main/img/otto_market_logo_white_bg.PNG)
+![OTTO.market Logo](https://github.com/ottohedicke/howto/blob/main/img/otto_market_logo_white_bg.PNG)
 
 *Read this document in other languages: [deutsch](https://github.com/Uncrout/TestFuerOttoDL_Leitfaden/blob/main/README.md), [english](https://github.com/Uncrout/TestFuerOttoDL_Leitfaden/blob/main/EN/README_EN.md)*
 
