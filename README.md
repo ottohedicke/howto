@@ -4,7 +4,7 @@
 
 # Service Provider Integration guide
 
-**Präambel
+**Präambel**
 - Was kann in diesem Repo gefunden werden?
 - Hinweis auf Testfälle und Postman Collection**
 
