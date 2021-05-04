@@ -6,24 +6,30 @@ Before you´re connecting your services to the OTTO Market you should test and d
 For this purpose OTTO established two test environments (sandbox & nonlive) so you can be sure you´re well prepared for the live environment.
 Below you´ll find the URL´s of our environments.
 
-### Sandbox (testing)
+### Sandbox-URL (testing)
 ```
 https://sandbox.api.otto.market
 ```
 
-### Nonlive (testing)
+### Nonlive-URL (testing)
 ```
 https://nonlive.api.otto.market
 ```
 
 After your integration was successfull, you will use the following URL to the OTTO Market.
 
-### Live
+### Live-URL
 ```
 https://api.otto.market
 ```
 
+Now that you know about the different URL´s you´ll learn how to get access.
+Firstly you´ll need a `username` and a `password`. These are unique for each environment (live, nonlive, sandbox).
 
+[Link]How to register as a **Partner**
+
+If you´re a **service provider** interessted in adding a connection to the OTTO Market to your services please use this [Link]e-mail.
+We´ll happily set you up with user credentials so you can start developing asap!
 
 ## Fetch Access Token for sandbox-environment
 
@@ -64,7 +70,7 @@ curl -X POST \
   -d 'username=<YourUsername>&password=<YourPassword>&grant_type=password&client_id=token-otto-api'
 ```
 
-Response-Example 
+### Response-Example 
 
 ```JSON
 {
