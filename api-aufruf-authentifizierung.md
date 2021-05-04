@@ -1,5 +1,60 @@
-# Erster API-Aufruf und Authentifizierung
+# Quickstart / Start here
 
+## How do I connect to the OTTO Market API?
+
+Before you´re connecting your services to the OTTO Market you should test and develop your integration.
+For this purpose OTTO established two test environments (sandbox & nonlive) so you can be sure you´re well prepared for the live environment.
+Below you´ll find the URL´s of our environments.
+
+### Sandbox (testing)
+```
+https://sandbox.api.otto.market
+```
+
+### Nonlive (testing)
+```
+https://nonlive.api.otto.market
+```
+
+After your integration was successfull, you will use the following URL to the OTTO Market.
+
+### Live
+```
+https://api.otto.market
+```
+
+
+
+## Fetch Access Token for sandbox-environment
+
+In order to fetch an authorization token you must have an API user with a password. You can use the following cURL command to receive your token.
+Make sure you include your username and password in the command (without leading and trailing < >).
+
+``` curl
+curl -X POST \
+  https://sandbox.api.otto.market/v1/token \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'cache-control: no-cache' \
+  -d 'username=<YourUsername>&password=<YourPassword>&grant_type=password&client_id=token-otto-api'
+```
+
+## Fetch Access Token for nonlive-environment
+
+In order to fetch an authorization token you must have an API user with a password. You can use the following cURL command to receive your token.
+Make sure you include your username and password in the command (without leading and trailing < >).
+
+``` curl
+curl -X POST \
+  https://nonlive.api.otto.market/v1/token \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'cache-control: no-cache' \
+  -d 'username=<YourUsername>&password=<YourPassword>&grant_type=password&client_id=token-otto-api'
+```
+
+## Fetch Access Token for live-environment
+
+In order to fetch an authorization token you must have an API user with a password. You can use the following cURL command to receive your token.
+Make sure you include your username and password in the command (without leading and trailing < >).
 
 ``` curl
 curl -X POST \
@@ -24,4 +79,17 @@ Response-Example
 }
 ```
 
-Extract the value from "access_token" and use it as the bearer token for authentication.
+Extract the value from `"access_token"` and use it as the bearer token for authentication.
+
+## Refresh Token
+
+The refresh token can be extracted from the `"refresh_token"` value. Once the access token is expired you can use the refresh token to get a new access token, without using your users credentials again. You can use the following cURL command. Include the refresh token (without leading and trailing < >).
+
+```
+curl -X POST \
+  https://api.otto.market/v1/token \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'cache-control: no-cache' \
+  -d 'refresh_token=<refresh_token>&grant_type=refresh_token&client_id=token-otto-api'
+```
+
