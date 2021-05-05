@@ -54,3 +54,5 @@ https://api.otto.market/v2/products/categories
                 },
 ```
 
+Q: What do `relevance` and `featureRelevance` mean in my case?  
+A: `relevance` can be `HIGH`, `MEDIUM` or `LOW` and indicates how important an attribute is.
