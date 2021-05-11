@@ -54,5 +54,11 @@ https://api.otto.market/v2/products/categories
                 },
 ```
 
-Q: What do `relevance` and `featureRelevance` mean in my case?  
-A: `relevance` can be `HIGH`, `MEDIUM` or `LOW` and indicates how important an attribute is.
+Q: What does `relevance` mean in my case?  
+A: `relevance` can be `HIGH`, `MEDIUM` or `LOW` and indicates the relevance and weighting for the visibility of the individual attributes.
+
+Q: What does `featureRelevance` mean in my case?  
+A: `featureRelevance` indicates what your information about the attribute is used for.
+`LEGAL` is a mandatory field. All others are optional. Nevertheless, you should fill them in if possible, as they increase the visibility of your products on otto.de.
+
+For further information see [OTTOmarket Kategorienliste](https://og2gether-my.sharepoint.com/:x:/g/personal/micha_saake_otto_de/EXg5Id8bTxNKuV8mRkQ1wrsBNFuBrjP8iQJINZjcezvjdg?e=cgq4Cz).
