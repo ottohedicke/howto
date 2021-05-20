@@ -1,8 +1,0 @@
-ANNOUNCED: Orders with at least one position item in state ANNOUNCED
-PROCESSABLE: Orders with at least one position item in state PROCESSABLE and none in ANNOUNCED
-SENT: Orders with at least one position item in state SENT and none in either ANNOUNCED or PROCESSABLE
-RETURNED: Orders with at least one position item in state RETURNED and none in either ANNOUNCED, PROCESSABLE, or SENT
-CANCELLED_BY_PARTNER: Orders with at least one position item in state CANCELLED_BY_PARTNER
-CANCELLED_BY_MARKETPLACE: Orders with at least one position item in state CANCELLED_BY_MARKETPLACE
-
-WAS BEDEUTEN DIE STATUS EIGENTLICH?
